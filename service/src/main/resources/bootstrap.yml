@@ -7,6 +7,11 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: test
+    stream:
+      binders:
+        myMessage:
+          group: order # 消息分组
+          content-type: application/json # 消息类型
 eureka:
   client:
     service-url:
